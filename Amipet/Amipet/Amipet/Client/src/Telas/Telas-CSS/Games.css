@@ -1,0 +1,47 @@
+.games-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #00B0FC;
+}
+
+.botoes-jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #00B0FC;
+    width: 40%;
+    height: 80vh;
+}
+
+.square {
+    width: 100%;
+    max-width: 400px;
+    height: 90px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+}
+
+.square p {
+    font-size: 1.5em;
+    color: white;
+    border-color: #B4B4B4;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.square img {
+    width: 5vh;
+}
+
+.square-dentro {
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    align-items: center;
+}

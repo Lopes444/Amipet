@@ -1,0 +1,32 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.home-meio {
+
+  align-items: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.div-bola {
+  display: flex;
+  align-items: end;
+}
+
+.capivara-home {
+  padding-right: 15%;
+  width: 250px;
+  top: 20%;
+}
+
+.bola {
+  width: 20vh;
+  cursor: pointer;
+}

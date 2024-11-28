@@ -1,0 +1,81 @@
+/* Estilo para o contêiner do chat */
+.chat {
+  height: 500px; /* Define a altura do contêiner do chat */
+  overflow-y: auto; /* Permite rolagem vertical quando o conteúdo excede a altura */
+  border: 1px solid #333; /* Adiciona uma borda fina ao redor do chat */
+  background-color: #2b2b2b; /* Define a cor de fundo do chat */
+  border-radius: 10px; /* Arredonda os cantos do contêiner */
+  padding: 10px; /* Adiciona espaçamento interno no contêiner */
+  display: absolute; /* Define a posição do contêiner */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  gap: 10px; /* Define o espaçamento entre as mensagens */
+  width: 450px; /* Define a largura do contêiner */
+  padding-left: 480px; /* Adiciona espaçamento à esquerda do contêiner */
+}
+
+/* Estilo para as mensagens dentro do chat */
+.message {
+  display: flex; /* Define o layout flexível para as mensagens */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  margin-bottom: 10px; /* Adiciona espaçamento vertical entre as mensagens */
+}
+
+/* Estilo para as mensagens enviadas pelo usuário */
+.message.user {
+  align-items: flex-end; /* Alinha as mensagens do usuário à direita */
+}
+
+/* Estilo para as mensagens enviadas pelo bot */
+.message.bot {
+  align-items: flex-start; /* Alinha as mensagens do bot à esquerda */
+}
+
+/* Estilo para o texto das mensagens */
+.message .text {
+  max-width: 70%; /* Define a largura máxima das mensagens */
+  padding: 10px; /* Adiciona espaçamento interno ao texto */
+  border-radius: 10px; /* Arredonda os cantos do texto */
+  font-size: 0.9rem; /* Define o tamanho da fonte */
+  line-height: 1.4; /* Define o espaçamento entre linhas */
+  word-wrap: break-word; /* Permite que o texto quebre em palavras para evitar estouro */
+  background-color: #444; /* Cor de fundo padrão para as mensagens */
+  color: white; /* Cor do texto padrão */
+}
+
+/* Estilo para o texto das mensagens do usuário */
+.message.user .text {
+  background-color: #00aaff; /* Cor de fundo azul para as mensagens do usuário */
+  color: white; /* Cor do texto para contraste */
+}
+
+/* Estilo para o texto das mensagens do bot */
+.message.bot .text {
+  background-color: #2b2b2b; /* Cor de fundo escura para as mensagens do bot */
+  color: white; /* Cor do texto para contraste */
+}
+
+/* Estilo para o contêiner de entrada e botão */
+.input-container {
+  display: flex; /* Define layout flexível para entrada e botão */
+  gap: 10px; /* Adiciona espaçamento entre os elementos */
+}
+
+/* Estilo para o campo de entrada */
+.input {
+  flex: 1; /* Permite que o campo de entrada ocupe todo o espaço disponível */
+  padding: 10px; /* Adiciona espaçamento interno */
+  border-radius: 10px; /* Arredonda os cantos do campo */
+  border: none; /* Remove a borda padrão */
+  background-color: #2b2b2b; /* Cor de fundo escura para o campo */
+  color: white; /* Cor do texto */
+}
+
+/* Estilo para o botão de envio */
+.button {
+  padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+  border-radius: 10px; /* Arredonda os cantos do botão */
+  border: none; /* Remove a borda padrão */
+  background-color: #00aaff; /* Cor de fundo azul para o botão */
+  color: white; /* Cor do texto do botão */
+  cursor: pointer; /* Exibe o cursor de mão ao passar sobre o botão */
+}

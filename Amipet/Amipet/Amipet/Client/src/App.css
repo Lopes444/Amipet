@@ -1,0 +1,215 @@
+.tudo-tela {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-image: url('./public/Tela-fundo-inicio/Fundo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.alternative-background {
+  background-image: url('./public/Tela-quarto/Noite/tela-fundo-noite.png');
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #f0f0f0;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: black;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+
+.nav-buttons main {
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #555454;
+}
+
+.botoes-telas {
+  margin: 10px;
+  padding: 10px 15px;
+  width: 10vh;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+/* ! RESPONSIVIDADE ! */
+
+@media screen and (max-width: 1080px) {
+  .mesa {
+    top: 30%;
+    left: 30%;
+  }
+
+  .square-dentro img {
+    width: 60%;
+  }
+
+  .square-dentro {
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .square {
+    padding-bottom: 1%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .capivara-cozinha {
+    width: 30vh;
+  }
+
+  .mesa {
+    top: 30%;
+    left: 30%;
+    width: 50%;
+  }
+
+  .botoes-jogos {
+    width: 90vw;
+    height: auto;
+  }
+
+  .square {
+    width: 100%;
+    height: auto;
+  }
+
+  .cordinha {
+    height: 30vh;
+    left: 80%;
+  }
+
+  .back-button {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+
+  .capivara-home {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .capivara-cozinha {
+    width: 30vh;
+  }
+
+  .mesa {
+    top: 60%;
+    left: 0%;
+    width: 100%;
+  }
+
+  .cordinha img {
+    height: 30vh;
+    left: 10%;
+  }
+
+  .bola {
+    width: 100%;
+    height: 20%;
+    top: 20%;
+  }
+
+  .div-bola {
+    height: 100%;
+  }
+
+  .botoes-telas {
+    position: relative;
+    width: 70%;
+    margin: 0%;
+  }
+
+  .home-meio {
+    display: flex;
+    align-items: end;
+  }
+
+  .square-dentro {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .square {
+    width: 90%;
+  }
+
+  .botoes-jogos {
+    height: 75%;
+  }
+
+  .capivara-dormir {
+    width: 200px;
+  }
+
+  .capivara-home {
+    width: 60%;
+  }
+  
+}
+
+.chat{
+  
+    height: 500px;
+    overflow-y: auto;
+    border: 1px solid #333;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    padding: 10px;
+    
+    flex-direction: column;
+    gap: 10px; /* Espaçamento entre as mensagens */
+  width: 100%;
+  }
+
